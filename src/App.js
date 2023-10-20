@@ -70,7 +70,7 @@ function App() {
   });
 
   return (
-    <div className="araes">
+    <>
       <Routes>
         <Route
           index
@@ -99,7 +99,7 @@ function App() {
           }
         />
       </Routes>
-    </div>
+    </>
   );
 }
 
