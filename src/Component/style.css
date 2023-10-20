@@ -1,0 +1,1088 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    /* font-weight: 800; */
+    font-weight: 100;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    min-height: 100vh;
+    /* background: white; */
+    /* position: relative; */
+}
+
+.areas {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+    /* background-color: red; */
+    /* gap: 1rem; */
+}
+
+.areas .head {
+    position: absolute;
+    width: 100%;
+    padding: 1.5rem 0.1rem;
+    display: flex;
+    /* background: green; */
+    justify-content: center;
+    align-items: center;
+    border: none;
+    /* margin-bottom: -10rem; */
+    z-index: 100;
+}
+
+.head .container {
+    /* background: white; */
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20rem; */
+}
+
+.head .container .greetings {
+    width: 60%;
+    height: 50px;
+    /* background: black; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.head .container .greetings h1 {
+    color: gray;
+}
+
+.head .container .greetings h1 span {
+    color: rgba(128, 128, 128, 0.592);
+}
+
+.head .container .greetings img {
+    animation: rotate 10s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        transform: rotate(-360deg);
+
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    80% {}
+
+    100% {}
+}
+
+.head .container .box {
+    cursor: pointer;
+    width: 15%;
+    height: 50px;
+    /* background: green; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(128, 128, 128, 0.684);
+    font-size: 2rem;
+}
+
+span {
+    color: "#33BBC5";
+}
+
+.container p {
+    font-size: 1.5rem;
+
+}
+
+.adding {
+    position: fixed;
+    min-width: 15%;
+    min-height: 10%;
+    /* background: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1111;
+    margin-top: 38rem;
+}
+
+.adding .container {
+    width: 95%;
+    height: 100%;
+    /* background: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: none; */
+}
+
+.adding .container .add {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: gray;
+    /* background: wheat; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    gap: 0;
+    z-index: 100;
+    color: white;
+}
+
+.sec {
+    /* position: absolute; */
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: blue; */
+    border: none;
+    margin-top: 7rem;
+}
+
+.sec .container {
+    width: 100%;
+    min-height: 450px;
+    /* background: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* background: white; */
+    /* position: relative; */
+    /* border-radius: 20px; */
+    z-index: 100;
+    /* position: absolute; */
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.sec .containerTwo {
+    /* position: absolute; */
+    width: 90%;
+    min-height: 95%;
+    /* background: rgba(128, 128, 128, 0.033); */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 10fr);
+    /* grid-row: 2fr; */
+    /* background: green;  */
+    /* position: relative; */
+    /* border-radius: 20px; */
+   /* overflow: scroll; */
+   z-index: 100;
+
+}
+
+/* .personal:first-child {
+    grid-column-start: span 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background: rgba(128, 128, 128, 0.405) !important;
+
+
+} */
+
+/* .personal:nth-child(4) {
+    grid-column-start: span 2;
+    background: rgba(128, 128, 128, 0.405) !important;
+    color: white !important;
+
+} */
+
+/* .personal:nth-child(7) {
+    grid-column-start: span 2;
+    background: rgba(128, 128, 128, 0.405) !important;
+    color: white !important;
+
+} */
+
+/* .personal:nth-child(10) {
+    grid-column-start: span 2;
+    background: rgba(128, 128, 128, 0.405) !important;
+    color: white !important;
+
+} */
+
+
+
+
+.sec .container .intro {
+    width: 90%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 5rem; */
+    /* background: cyan;    */
+
+}
+
+.sec .container .intro .noteimg {
+    max-width: 100%;
+    max-height: 450px;
+    display: flex;
+    justify-content: center;
+
+    /* background: yellowgreen; */
+    z-index: 100;
+}
+
+/* .sec .container .intro .noteimg::after{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border: 0.2px solid rgba(255, 255, 255, 0.209);
+    z-index: -1;
+    top: 30%;
+    left: -1%;
+} */
+.sec .container .intro .noteimg img {
+    width: 70%;
+    height: 100%;
+    z-index: inherit;
+}
+
+/* .sec .container .intro  .purpose{
+    max-width: 70%;
+    min-height: 70%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: blue;
+    z-index: 100;
+
+    margin-top: -30rem;
+} */
+
+
+.sec .containerTwo .personal {
+
+    min-width: 20%;
+    min-height: 20rem;
+    gap: 2rem;
+    background: rgba(128, 128, 128, 0.233);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sec .containerTwo .personal:hover {
+    transform: translateY(-7px);
+    background: rgba(128, 128, 128, 0.076);
+}
+.sec .containerTwo .personal .firstLayer{
+    width: 90%;
+    background: orange;
+    display: flex;
+}
+
+.sec .containerTwo .personal .title {
+    width:  60%;
+    height: 205px;
+    /* background: white; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+.sec .containerTwo .personal .title h1 {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.1rem;
+    text-align: right;
+    line-height: 2rem;
+    word-wrap: break-word;
+    /* width: 100%; */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616); */
+}
+
+.sec .containerTwo .personal .write {
+    width: 70%;
+    height: 20%;
+    /* background: red; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+.sec .containerTwo .personal .write .essentials {
+    width: 80%;
+    height: 80%;
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* display: none; */
+    /* animation: more 2s ease-in-out forwards; */
+}
+
+.sec .containerTwo .personal .write .essentials .add {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.823);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    animation: more 1s ease-in-out forwards;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.sec .containerTwo .personalTwo .write .essentials .add:hover {
+    animation: bounce 2s ease forwards;
+}
+
+.sec .containerTwo .personal .write .essentials .delete {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.823);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    animation: more 1s ease-in-out forwards;
+    cursor: pointer;
+}
+
+.sec .containerTwo .personal .write .essentials .delete:hover {
+    animation: bounce 2s ease forwards;
+}
+
+@keyframes bounce {
+    40% {
+        transform: translateY(-5px);
+        background: black;
+        font-weight: 900;
+    }
+}
+
+@keyframes more {
+    50% {
+        opacity: 0.5;
+        /* transform: translateX(10px); */
+        transform: rotate(360deg);
+
+    }
+
+    80% {}
+}
+
+.sec .containerTwo .personal .write .edit {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+
+.type-area {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    /* background: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1.5rem; */
+    /* gap: 0.1rem; */
+}
+
+.type-area .typeOne {
+    width: 90%;
+    height: 95%;
+    background-color: rgba(128, 128, 128, 0.097);
+    animation: anim 2s forwards;
+    /* border-radius: 20px; */
+    /* background-image: url(./Images/world.png); */
+    background-repeat: no-repeat;
+    /* background-size: 100px; */
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes anim {
+    0% {
+        width: 0%;
+    }
+
+    10% {
+        width: 0%;
+        /* transform: rotate(3deg); */
+    }
+
+    90% {
+        width: 95%;
+        /* transform: rotate(-2deg); */
+    }
+}
+
+.type-area .typeOne .inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.type-area .typeOne .inner .write input {
+    padding: 2px 10px;
+    width: 90%;
+    height: 80%;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.type-area .typeOne .inner .write {
+    width: 40%;
+    /* background-color: red; */
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.type-area .typeOne .inner .write .title {
+    width: 95%;
+    height: 30%;
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: black;
+    gap: 1rem;
+    /* margin-top: -10rem; */
+    /* border: 1px solid gray; */
+    /* background: none; */
+    /* border-radius: 5px; */
+}
+
+.type-area .typeOne .inner .write .title .two {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    /* background: white; */
+    gap: 0.3rem;
+}
+
+.type-area .typeOne .inner .write .title .insider {
+    width: 95%;
+    height: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.type-area .typeOne .inner .write .title .two input {
+    width: 95%;
+    height: 90%;
+    background: none;
+    color: black;
+}
+
+.type-area .typeOne .inner .write .buttons {
+    width: 60%;
+    height: 30%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-area .typeOne .inner .write .buttons button {
+    width: 40%;
+    height: 80%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(tomato, deeppink);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+.type-area .typeOne .inner .notebook {
+    width: 45%;
+    height: 90%;
+    /* background: red; */
+    /* border: 1px solid black; */
+    /* border-radius: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    word-spacing: 0rem;
+    /* letter-spacing: 0.1rem; */
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: black;
+    resize: none;
+    animation: book 10s ease forwards;
+    outline: none;
+    /* animation-timing-function: 5s; */
+}
+
+.type-area .typeOne .inner .notebook img {
+    min-width: 500px;
+    height: 500px;
+}
+
+@keyframes book {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    90% {
+        /* opacity: 0; */
+        /* transform: translate(-120px); */
+    }
+}
+
+.typewriter {
+    width: 100%;
+    height: 800px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    /* opacity: 0.8; */
+    gap: 1rem;
+    filter: hue-rotate(30deg);
+    position: relative;
+}
+
+.typewriter .first {
+    z-index: 100;
+    width: 80%;
+    height: 10%;
+    background: black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: blur(0); */
+}
+
+.typewriter .first .container {
+    width: 98%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.136);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 8rem; */
+}
+
+.typewriter .first .container .inner {
+    width: 98%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+}
+
+.typewriter .first .container .inner .filename {
+    width: 80%;
+    /* background: green; */
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.typewriter .first .container .inner .filename h1 {
+    color: burlywood;
+    /* font-style: italic; */
+}
+
+.typewriter .first .container .icons {
+    width: 30%;
+    height: 80%;
+    /* background: purple; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: wheat;
+    font-size: 2rem;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.typewriter .first .container .icons .favorNote {
+    width: 90%;
+    height: 90%;
+    background: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    animation: fade 10s ease-out forwards;
+}
+
+@keyframes fade {
+    100% {
+        opacity: 0;
+    }
+}
+
+.typewriter .first .container .icons .star {
+    width: 10%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: orange; */
+}
+
+.typewriter textarea {
+    font-size: 1.3rem;
+    width: 80%;
+    height: 80%;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    letter-spacing: 0.15rem;
+
+    color: black;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.429);
+    border-radius: 3px;
+    resize: none;
+    position: relative;
+    /* box-shadow: 0px 3px 20px rgba(128, 128, 128, 0.278); */
+}
+
+.typewriter .done {
+    width: 10%;
+    height: 8%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: 1s ease;
+    /* position: absolute; */
+    /* margin-top: 23rem; */
+    /* margin-left: 45rem; */
+
+}
+
+.typewriter .done:hover {
+    transform: translateY(-5px);
+}
+
+.secTwo {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    /* background-color: red; */
+    position: relative;
+}
+
+.secTwo .type-area {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    /* background: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1.5rem; */
+    /* gap: 0.1rem; */
+}
+
+.type-area .typeOne {
+    width: 90%;
+    height: 95%;
+    /* background-color: rgba(128, 128, 128, 0.097); */
+    animation: anim 2s forwards;
+    /* border-radius: 20px; */
+    /* background-image: url(./Images/world.png); */
+    background-repeat: no-repeat;
+    /* background-size: 100px; */
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes anim {
+    0% {
+        width: 0%;
+    }
+
+    10% {
+        width: 0%;
+        /* transform: rotate(3deg); */
+    }
+
+    90% {
+        width: 95%;
+        /* transform: rotate(-2deg); */
+    }
+}
+
+.secTwo .type-area form {
+    width: 100%;
+    height: 100%;
+    /* background: orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    /* position: relative; */
+}
+
+.secTwo .type-area form .container {
+    width: 100%;
+    height: 10%;
+    /* background: black; */
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.secTwo .type-area form .firstLine {
+    width: 100%;
+    height: 10%;
+    /* background: blue; */
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secTwo .type-area form .firstLine .back {
+    min-width: 5%;
+    min-height: 100%;
+    background: rgba(128, 128, 128, 0.405);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.secTwo .type-area form .firstLine .save {
+    min-width: 5%;
+    height: 100%;
+    border-radius: 10%;
+    background: rgba(128, 128, 128, 0.405);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.secTwo .type-area form .container input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /* padding: 1rem; */
+    letter-spacing: 0.1rem;
+    word-spacing: 0.05rem;
+    font-weight: 900;
+    color: black;
+    background: none;
+}
+
+.secTwo .type-area form input::placeholder {
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.secTwo .type-area form textarea {
+    font-size: 1.3rem;
+    width: 100%;
+    height: 80%;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    letter-spacing: 0.15rem;
+
+    color: black;
+    background: none;
+    /* border: 1px solid rgba(0, 0, 0, 0.429); */
+    border-radius: 3px;
+    resize: none;
+    position: relative;
+    /* box-shadow: 0px 3px 20px rgba(128, 128, 128, 0.278); */
+}
+
+.secTwo .type-area form textarea::placeholder {
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+}
+
+.secTwo .type-area form .container .save {
+    width: 5%;
+    height: 90%;
+    border-radius: 8%;
+    background: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.secTwo .type-area form .container .edit {
+    width: 5%;
+    margin-left: 32.5rem;
+    height: 90%;
+    border-radius: 8%;
+    background: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 420px) {
+    sec .containerTwo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sec .containerTwo .personal {
+
+        min-width: 20%;
+        /* height: 20rem; */
+        gap: 2rem;
+        /* background: rgba(128, 128, 128, 0.233); */
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 0.1s ease-in;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .sec .containerTwo .personal .title{
+        min-width: 50%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        /* border: 1px dotted white; */
+    }
+    .adding{
+        /* background: green; */
+    }
+    .secTwo .type-area form .firstLine .back {
+        min-width: 18%;
+        min-height: 100%;
+        background: rgba(128, 128, 128, 0.405);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .secTwo .type-area form .firstLine .save {
+        min-width: 18%;
+        height: 100%;
+        border-radius: 10%;
+        background: rgba(128, 128, 128, 0.405);
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        border: none;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .sec .containerTwo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec .containerTwo .personal {
+
+        min-width: 20%;
+        /* height: 20rem; */
+        gap: 2rem;
+        /* background: rgba(128, 128, 128, 0.233); */
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 0.1s ease-in;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .adding{
+        /* background: green; */
+    }
+    .secTwo .type-area form .firstLine .back {
+        min-width: 5%;
+        min-height: 100%;
+        background: rgba(128, 128, 128, 0.405);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .secTwo .type-area form .firstLine .save {
+        min-width: 5%;
+        height: 100%;
+        border-radius: 10%;
+        background: rgba(128, 128, 128, 0.405);
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+/* @media only screen and(max-width: 450px){
+    .secTwo .type-area form .firstLine .back {
+        min-width: 35%;
+        min-height: 100%;
+        background: rgba(128, 128, 128, 0.405);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .secTwo .type-area form .firstLine .save {
+        min-width: 15%;
+        height: 100%;
+        border-radius: 10%;
+        background: rgba(128, 128, 128, 0.405);
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        border: none;
+        cursor: pointer;
+    }
+} */
