@@ -1,16 +1,11 @@
 import "./App.css";
 import "./Component/style.css";
 import React from "react";
-import Header from "./Component/Header";
-import Bottom from "./Component/Bottom";
 import FirstPage from "./Pages/FirstPage";
 import Details from "./Pages/Details";
-// import folder from "./Component/Images/new-folder-dynamic-premium.png";
-import Writing from "./Pages/Writing";
 import { v4 as uuid } from "uuid";
 import { useNavigate } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-import { motion } from "framer-motion";
 
 function App() {
   const [note, setNote] = React.useState(
@@ -38,8 +33,6 @@ function App() {
   };
 
   function createNote(e) {
-    // e.preventDefault();
-
     const objectStorage = storingObject();
 
     setNote((prevState) => [...prevState, objectStorage]);
@@ -55,14 +48,6 @@ function App() {
     });
     setNote(updatedArray);
   }
-
-  // function findCurrentNote() {
-  //   return (
-  //     note.find((not) => {
-  //       return note.id === currentNote.id;
-  //     }) || note[0]
-  //   );
-  // }
 
   React.useEffect(() => {
     localStorage.setItem("note", JSON.stringify(note));
