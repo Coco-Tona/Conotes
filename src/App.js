@@ -95,9 +95,3 @@ export default App;
 // "deploy": "gh-pages -d deploy"
 
 // "homepage": "http://Coco-Tona.github.io/Notepad",
-
-"predeploy": "npm run build",
-
-"deploy": "gh-pages -d build",
-
-"homepage": "http://coco-tona.github.io/Notepad",
