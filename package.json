@@ -1,6 +1,10 @@
 {
+"homepage": "http://coco-tona.github.io/Notepad",
   
-  "homepage": "http://Coco-Tona.github.io/Notepad",
+
+  "predeploy": "npm run build",
+
+
 
   "name": "my-note",
   
@@ -102,9 +106,7 @@
   "start": "react-scripts start",
   
 
-
   "predeploy": "npm run build",
-
 
   "deploy": "gh-pages -d build",
     
